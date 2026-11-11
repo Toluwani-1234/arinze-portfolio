@@ -1,149 +1,974 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Arinze Miracle Akuagbazie is a construction project manager and Chinese–English translator, now studying fullstack engineering."><meta name="theme-color" content="#0E1A24"><title>Arinze Miracle Akuagbazie | Project Manager and Fullstack Engineering Student</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#E7E9E6;--ink:#14212C;--steel:#56636E;--hv:#D4E23B;--card:#F4F5F3;--line:#BFC5C3;--navy:#0E1A24;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0C141B;--ink:#E7E9E6;--steel:#9AA6AF;--card:#15202A;--line:#2B3944;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#0C141B;--ink:#E7E9E6;--steel:#9AA6AF;--card:#15202A;--line:#2B3944;color-scheme:dark}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 "Public Sans",system-ui,sans-serif}
-img{display:block;max-width:100%}a{color:inherit}
-a:focus-visible{outline:3px solid var(--hv);outline-offset:3px}
-h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-weight:700;line-height:.95;margin:0}
-.wrap{max-width:1160px;margin:0 auto;padding:0 1.25rem}
-section{padding:6rem 0 0}
-h2{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:2rem}
-.hero{position:relative;min-height:100svh;color:#fff;background:var(--navy);display:flex;flex-direction:column;overflow:hidden;margin-top:calc(-1 * env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,26,36,.75),rgba(14,26,36,.15) 40%,rgba(14,26,36,.92))}
-.hero>*{position:relative;z-index:1}
-nav.top{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.25rem;max-width:1160px;width:100%;margin:0 auto;font-weight:500}
-nav.top div{display:flex;gap:1.25rem;flex-wrap:wrap}
-nav.top a{text-decoration:none}nav.top a:hover{text-decoration:underline;text-decoration-color:var(--hv);text-decoration-thickness:3px;text-underline-offset:5px}
-.hero .in{margin:auto 0 0;width:100%;padding-bottom:2.5rem}
-.cn{position:absolute;right:-1rem;top:18%;z-index:1;font:700 clamp(6rem,22vw,17rem)/1 "Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;color:transparent;-webkit-text-stroke:2px rgba(212,226,59,.35);writing-mode:vertical-rl;pointer-events:none;user-select:none}
-.hero h1{font-size:clamp(3.6rem,13vw,10rem);text-transform:uppercase;letter-spacing:.01em;max-width:11ch}
-.hero .tag{font-size:clamp(1.1rem,2.2vw,1.5rem);max-width:36ch;margin:1.25rem 0 2rem;color:#E7E9E6}
-.btns{display:flex;gap:.75rem;flex-wrap:wrap}
-.btn{display:inline-block;padding:.85rem 1.4rem;font-weight:600;text-decoration:none;border:2px solid currentColor;border-radius:2px}
-.btn.main{background:var(--hv);border-color:var(--hv);color:#0E1A24}
-.btn:hover{border-color:var(--hv)}
-.tb{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid rgba(255,255,255,.35);margin-top:2.5rem}
-@media(min-width:860px){.tb{grid-template-columns:repeat(4,1fr)}}
-.tb div{padding:.9rem 1rem .9rem 0;border-right:1px solid rgba(255,255,255,.2)}
-.tb div+div{padding-left:1rem}.tb div:last-child{border:0}
-.tb small{display:block;font-size:.78rem;color:var(--hv);margin-bottom:.15rem}
-.about{display:grid;gap:2rem}
-@media(min-width:860px){.about{grid-template-columns:5fr 7fr;gap:4rem}}
-.about p.big{font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.4;margin:0 0 2rem}
-.pts{display:grid;gap:1.5rem}
-@media(min-width:700px){.pts{grid-template-columns:repeat(3,1fr)}}
-.pts div{border-top:6px solid var(--hv);padding-top:.8rem}
-.pts h3{font-size:1.5rem;margin-bottom:.4rem}.pts p{margin:0;color:var(--steel);font-size:.95rem}
-.gantt{background:var(--navy);color:#E7E9E6;padding:1.75rem;margin-bottom:3rem}
-.gantt h3{font-size:1.8rem;margin-bottom:.4rem}.gantt>p{margin:0 0 1.5rem;color:#9AA6AF;font-size:.92rem}
-.grow{display:grid;gap:.3rem;margin-bottom:1rem}
-@media(min-width:760px){.grow{grid-template-columns:210px 1fr;align-items:center;gap:1rem}}
-.track{position:relative;height:1.5rem;background:rgba(255,255,255,.08)}
-.track i{position:absolute;top:0;bottom:0;background:var(--hv)}
-.axis{position:relative;height:1.2rem;font-size:.75rem;color:#9AA6AF;margin-top:.6rem}
-@media(min-width:760px){.axis{margin-left:226px}}
-.axis span{position:absolute;transform:translateX(-50%);white-space:nowrap}.axis span:first-child{transform:none}
-.proj{display:grid;background:var(--card);border:1px solid var(--line);margin-bottom:1.5rem;overflow:hidden}
-@media(min-width:820px){.proj{grid-template-columns:7fr 5fr}.proj.rev{grid-template-columns:5fr 7fr}.proj.rev .ph{order:2}}
-.ph{overflow:hidden;min-height:260px}
-.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.proj:hover .ph img{transform:scale(1.04)}
-.pair{display:grid;grid-template-columns:1fr 1fr;height:100%}.pair img{aspect-ratio:3/4}
-.tx{padding:1.75rem;align-self:center}
-.proj h3{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:.6rem}
-.meta{color:var(--steel);font-size:.92rem;margin:0 0 .8rem;font-weight:500}
-.tx p:last-child{margin:0}
-.now{display:inline-block;background:var(--hv);color:#0E1A24;font:600 .8rem "Public Sans",sans-serif;padding:.15rem .55rem;margin-left:.5rem;vertical-align:middle;border-radius:2px}
-.more{display:grid;gap:1.5rem}
-@media(min-width:760px){.more{grid-template-columns:repeat(3,1fr)}}
-.more div{border-left:6px solid var(--hv);padding:.2rem 0 .2rem 1.1rem}
-.more h3{font-size:1.7rem;margin-bottom:.3rem}.more p{margin:0}
-.code{background:var(--navy);color:#E7E9E6;padding:1.5rem;font:400 .95rem/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;border-left:8px solid var(--hv);margin:0}
-.code b{color:var(--hv);font-weight:400}.code i{color:#9AA6AF;font-style:normal}
-.sw{display:grid;gap:2rem}@media(min-width:860px){.sw{grid-template-columns:1fr 1fr;align-items:center}}
-.sw p{margin:0 0 1rem;max-width:52ch}
-.cols{display:grid;gap:2.5rem}@media(min-width:760px){.cols{grid-template-columns:repeat(3,1fr)}}
-.cols h3{font-size:1.8rem;margin-bottom:.8rem}
-.cols ul{margin:0;padding:0;list-style:none}.cols li{padding:.65rem 0;border-top:1px solid var(--line)}
-.cols small{display:block;color:var(--steel)}
-.contact{background:var(--navy);color:#fff;margin-top:6rem;padding:5rem 0 3rem}
-.contact h2{font-size:clamp(3rem,9vw,7rem);max-width:12ch}
-.contact .rows{margin-top:2.5rem;border-top:2px solid rgba(255,255,255,.3)}
-.contact .rows a{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,.2);text-decoration:none;font:700 clamp(1.4rem,3.6vw,2.4rem)/1.1 "Barlow Condensed","Arial Narrow",sans-serif;overflow-wrap:anywhere}
-.contact .rows a span{font:500 .9rem "Public Sans",sans-serif;color:var(--hv);align-self:center}
-.contact .rows a:hover{background:var(--hv);color:#0E1A24;padding-left:1rem;padding-right:1rem}
-.contact .rows a:hover span{color:#0E1A24}
-.contact small{display:block;margin-top:3rem;color:#9AA6AF}
-</style>
-</head>
-<body>
-<header class="hero">
-<img src="assets/bua-tank-ikot-abasi.jpg" alt="Aerial view of the BUA tank project site at Ikot Abasi with two large storage tanks">
-<span class="cn" aria-hidden="true" lang="zh">项目经理</span>
-<nav class="top" aria-label="Sections"><strong>Arinze Akuagbazie</strong><div><a href="#about">About</a><a href="#work">Site work</a><a href="#software">Software</a><a href="#background">Background</a><a href="#contact">Contact</a></div></nav>
-<div class="wrap in">
-<h1>Arinze Miracle Akuagbazie</h1>
-<p class="tag">I run the ground, piles and wharves that big projects stand on. Now I’m learning to build the software behind them.</p>
-<div class="btns"><a class="btn main" href="#work">See the site work</a><a class="btn" href="#contact">Get in touch</a></div>
-<div class="tb"><div><small>Role</small>Construction Project Manager</div><div><small>Languages</small>Chinese and English</div><div><small>Studying</small>Software and Fullstack Engineering</div><div><small>Current site</small>Ibeto Terminal Wharf</div></div>
-</div>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Arinze Miracle Akuagbazie is a construction project manager and Chinese–English translator, now studying fullstack engineering." />
+    <meta name="theme-color" content="#0E1A24" />
+    <title>
+      Arinze Miracle Akuagbazie | Project Manager and Fullstack Engineering
+      Student
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <style>
+      :root {
+        --paper: #e7e9e6;
+        --ink: #14212c;
+        --steel: #56636e;
+        --hv: #d4e23b;
+        --card: #f4f5f3;
+        --line: #bfc5c3;
+        --navy: #0e1a24;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --paper: #0c141b;
+          --ink: #e7e9e6;
+          --steel: #9aa6af;
+          --card: #15202a;
+          --line: #2b3944;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --paper: #0c141b;
+        --ink: #e7e9e6;
+        --steel: #9aa6af;
+        --card: #15202a;
+        --line: #2b3944;
+        color-scheme: dark;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-padding-top: env(safe-area-inset-top, 0px);
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font:
+          400 1.0625rem/1.65 "Public Sans",
+          system-ui,
+          sans-serif;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+      }
+      a:focus-visible {
+        outline: 3px solid var(--hv);
+        outline-offset: 3px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+        font-weight: 700;
+        line-height: 0.95;
+        margin: 0;
+      }
+      .wrap {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+      section {
+        padding: 6rem 0 0;
+      }
+      h2 {
+        font-size: clamp(2.4rem, 6vw, 4rem);
+        margin-bottom: 2rem;
+      }
+      .hero {
+        position: relative;
+        min-height: 100svh;
+        color: #fff;
+        background: var(--navy);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-top: calc(-1 * env(safe-area-inset-top, 0px));
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+      .hero > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.55;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(14, 26, 36, 0.75),
+          rgba(14, 26, 36, 0.15) 40%,
+          rgba(14, 26, 36, 0.92)
+        );
+      }
+      .hero > * {
+        position: relative;
+        z-index: 1;
+      }
+      nav.top {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 1.25rem;
+        max-width: 1160px;
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 500;
+      }
+      nav.top #menu {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+      }
+      .burger {
+        display: none;
+      }
+      nav.top a {
+        text-decoration: none;
+      }
+      nav.top a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--hv);
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px;
+      }
+      .hero .in {
+        margin: auto 0 0;
+        width: 100%;
+        padding-bottom: 2.5rem;
+      }
+      .cn {
+        position: absolute;
+        right: -1rem;
+        top: 18%;
+        z-index: 1;
+        font:
+          700 clamp(6rem, 22vw, 17rem)/1 "Noto Sans SC",
+          "PingFang SC",
+          "Microsoft YaHei",
+          sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 2px rgba(212, 226, 59, 0.35);
+        writing-mode: vertical-rl;
+        pointer-events: none;
+        user-select: none;
+      }
+      .hero h1 {
+        font-size: clamp(3.1rem, 13vw, 10rem);
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        max-width: 11ch;
+      }
+      .hero .tag {
+        font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+        max-width: 36ch;
+        margin: 1.25rem 0 2rem;
+        color: #e7e9e6;
+      }
+      .btns {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 0.85rem 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid currentColor;
+        border-radius: 2px;
+      }
+      .btn.main {
+        background: var(--hv);
+        border-color: var(--hv);
+        color: #0e1a24;
+      }
+      .btn:hover {
+        border-color: var(--hv);
+      }
+      .tb {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 2px solid rgba(255, 255, 255, 0.35);
+        margin-top: 2.5rem;
+      }
+      @media (min-width: 860px) {
+        .tb {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .tb div {
+        padding: 0.9rem 1rem 0.9rem 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .tb div + div {
+        padding-left: 1rem;
+      }
+      .tb div:last-child {
+        border: 0;
+      }
+      .tb small {
+        display: block;
+        font-size: 0.78rem;
+        color: var(--hv);
+        margin-bottom: 0.15rem;
+      }
+      .about {
+        display: grid;
+        gap: 2rem;
+      }
+      @media (min-width: 860px) {
+        .about {
+          grid-template-columns: 5fr 7fr;
+          gap: 4rem;
+        }
+      }
+      .about p.big {
+        font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+        line-height: 1.4;
+        margin: 0 0 2rem;
+      }
+      .pts {
+        display: grid;
+        gap: 1.5rem;
+      }
+      @media (min-width: 700px) {
+        .pts {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .pts div {
+        border-top: 6px solid var(--hv);
+        padding-top: 0.8rem;
+      }
+      .pts h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.4rem;
+      }
+      .pts p {
+        margin: 0;
+        color: var(--steel);
+        font-size: 0.95rem;
+      }
+      .gantt {
+        background: var(--navy);
+        color: #e7e9e6;
+        padding: 1.75rem;
+        margin-bottom: 3rem;
+      }
+      .gantt h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.4rem;
+      }
+      .gantt > p {
+        margin: 0 0 1.5rem;
+        color: #9aa6af;
+        font-size: 0.92rem;
+      }
+      .grow {
+        display: grid;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+      }
+      @media (min-width: 760px) {
+        .grow {
+          grid-template-columns: 210px 1fr;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+      .track {
+        position: relative;
+        height: 1.5rem;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .track i {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: var(--hv);
+      }
+      .axis {
+        position: relative;
+        height: 1.2rem;
+        font-size: 0.75rem;
+        color: #9aa6af;
+        margin-top: 0.6rem;
+      }
+      @media (min-width: 760px) {
+        .axis {
+          margin-left: 226px;
+        }
+      }
+      .axis span {
+        position: absolute;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+      .axis span:first-child {
+        transform: none;
+      }
+      .proj {
+        display: grid;
+        background: var(--card);
+        border: 1px solid var(--line);
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+      }
+      @media (min-width: 820px) {
+        .proj {
+          grid-template-columns: 7fr 5fr;
+        }
+        .proj.rev {
+          grid-template-columns: 5fr 7fr;
+        }
+        .proj.rev .ph {
+          order: 2;
+        }
+      }
+      .ph {
+        overflow: hidden;
+        min-height: 260px;
+      }
+      .ph img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s;
+      }
+      .proj:hover .ph img {
+        transform: scale(1.04);
+      }
+      .pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+      }
+      .pair img {
+        aspect-ratio: 3/4;
+      }
+      .tx {
+        padding: 1.75rem;
+        align-self: center;
+      }
+      .proj h3 {
+        font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+        margin-bottom: 0.6rem;
+      }
+      .meta {
+        color: var(--steel);
+        font-size: 0.92rem;
+        margin: 0 0 0.8rem;
+        font-weight: 500;
+      }
+      .tx p:last-child {
+        margin: 0;
+      }
+      .now {
+        display: inline-block;
+        background: var(--hv);
+        color: #0e1a24;
+        font:
+          600 0.8rem "Public Sans",
+          sans-serif;
+        padding: 0.15rem 0.55rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+        border-radius: 2px;
+      }
+      .more {
+        display: grid;
+        gap: 1.5rem;
+      }
+      @media (min-width: 760px) {
+        .more {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .more div {
+        border-left: 6px solid var(--hv);
+        padding: 0.2rem 0 0.2rem 1.1rem;
+      }
+      .more h3 {
+        font-size: 1.7rem;
+        margin-bottom: 0.3rem;
+      }
+      .more p {
+        margin: 0;
+      }
+      .code {
+        background: var(--navy);
+        color: #e7e9e6;
+        padding: 1.5rem;
+        font:
+          400 0.95rem/1.7 ui-monospace,
+          Menlo,
+          Consolas,
+          monospace;
+        overflow-x: auto;
+        border-left: 8px solid var(--hv);
+        margin: 0;
+      }
+      .code b {
+        color: var(--hv);
+        font-weight: 400;
+      }
+      .code i {
+        color: #9aa6af;
+        font-style: normal;
+      }
+      .sw {
+        display: grid;
+        gap: 2rem;
+      }
+      @media (min-width: 860px) {
+        .sw {
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+        }
+      }
+      .sw p {
+        margin: 0 0 1rem;
+        max-width: 52ch;
+      }
+      .cols {
+        display: grid;
+        gap: 2.5rem;
+      }
+      @media (min-width: 760px) {
+        .cols {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .cols h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+      }
+      .cols ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .cols li {
+        padding: 0.65rem 0;
+        border-top: 1px solid var(--line);
+      }
+      .cols small {
+        display: block;
+        color: var(--steel);
+      }
+      .contact {
+        background: var(--navy);
+        color: #fff;
+        margin-top: 6rem;
+        padding: 5rem 0 3rem;
+      }
+      .contact h2 {
+        font-size: clamp(3rem, 9vw, 7rem);
+        max-width: 12ch;
+      }
+      .contact .rows {
+        margin-top: 2.5rem;
+        border-top: 2px solid rgba(255, 255, 255, 0.3);
+      }
+      .contact .rows a {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 1.2rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+        font:
+          700 clamp(1.4rem, 3.6vw, 2.4rem)/1.1 "Barlow Condensed",
+          "Arial Narrow",
+          sans-serif;
+        overflow-wrap: anywhere;
+      }
+      .contact .rows a span {
+        font:
+          500 0.9rem "Public Sans",
+          sans-serif;
+        color: var(--hv);
+        align-self: center;
+      }
+      .contact .rows a:hover {
+        background: var(--hv);
+        color: #0e1a24;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .contact .rows a:hover span {
+        color: #0e1a24;
+      }
+      .contact small {
+        display: block;
+        margin-top: 3rem;
+        color: #9aa6af;
+      }
 
-<main class="wrap">
-<section id="about"><div class="about"><h2>About</h2><div>
-<p class="big">I manage foundation, piling and marine works, from a 30,000-seat stadium in Bayelsa State to a terminal wharf and refinery foundations.</p>
-<div class="pts"><div><h3>Delivery on site</h3><p>Planning, site coordination, team leadership, finance and procurement across large civil and industrial projects.</p></div><div><h3>Two languages</h3><p>I work in Chinese and English on sites with Chinese contractors, so decisions and drawings reach the people who build.</p></div><div><h3>Building software</h3><p>Studying software engineering to make the tools project teams use every day.</p></div></div></div></div></section>
+      @media (max-width: 759px) {
+        section {
+          padding-top: 4rem;
+        }
+        h2 {
+          margin-bottom: 1.25rem;
+        }
+        nav.top {
+          align-items: center;
+          padding: 1rem 1.25rem;
+        }
+        .burger {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          background: rgba(14, 26, 36, 0.6);
+          border: 2px solid #fff;
+          padding: 0.65rem 0.6rem;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .burger:focus-visible {
+          outline: 3px solid var(--hv);
+          outline-offset: 3px;
+        }
+        .burger span {
+          display: block;
+          width: 22px;
+          height: 2px;
+          background: #fff;
+          transition:
+            transform 0.2s,
+            opacity 0.2s;
+        }
+        nav.top.open .burger span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        nav.top.open .burger span:nth-child(2) {
+          opacity: 0;
+        }
+        nav.top.open .burger span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+        nav.top #menu {
+          display: none;
+          flex-direction: column;
+          gap: 0;
+          width: 100%;
+          margin-top: 0.75rem;
+          background: rgba(14, 26, 36, 0.96);
+          border-top: 3px solid var(--hv);
+        }
+        nav.top.open #menu {
+          display: flex;
+        }
+        nav.top #menu a {
+          padding: 1rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          font-size: 1.1rem;
+        }
+        .cn {
+          font-size: 7.5rem;
+          top: 12%;
+          right: -0.25rem;
+          opacity: 0.8;
+        }
+        .hero .in {
+          padding-bottom: 1.75rem;
+        }
+        .hero .tag {
+          margin: 1rem 0 1.5rem;
+        }
+        .btns .btn {
+          flex: 1 1 auto;
+          text-align: center;
+        }
+        .tb {
+          grid-template-columns: 1fr 1fr;
+          margin-top: 1.75rem;
+        }
+        .tb div,
+        .tb div + div {
+          padding: 0.75rem 0.75rem 0.75rem 0;
+          border-right: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          font-size: 0.95rem;
+          line-height: 1.3;
+        }
+        .tb div:last-child {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gantt {
+          padding: 1.25rem;
+        }
+        .axis {
+          margin-left: 0;
+        }
+        .axis span:nth-child(even) {
+          display: none;
+        }
+        .axis span:last-child {
+          transform: translateX(-100%);
+          left: 100% !important;
+        }
+        .tx {
+          padding: 1.25rem;
+        }
+        .ph {
+          min-height: 0;
+        }
+        .pair img {
+          aspect-ratio: 3/4;
+        }
+        .more {
+          gap: 1.25rem;
+        }
+        .code {
+          font-size: 0.8rem;
+          padding: 1.1rem;
+        }
+        .contact {
+          margin-top: 4rem;
+          padding: 3.5rem 0 2.5rem;
+        }
+        .contact .rows a:hover {
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <img
+        src="assets/bua-tank-ikot-abasi.jpg"
+        alt="Aerial view of the BUA tank project site at Ikot Abasi with two large storage tanks" />
+      <span class="cn" aria-hidden="true" lang="zh">项目经理</span>
+      <nav class="top" id="nav" aria-label="Sections">
+        <strong>Arinze Akuagbazie</strong
+        ><button
+          class="burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div id="menu">
+          <a href="#about">About</a><a href="#work">Site work</a
+          ><a href="#software">Software</a><a href="#background">Background</a
+          ><a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="wrap in">
+        <h1>Arinze Miracle Akuagbazie</h1>
+        <p class="tag">
+          I run the ground, piles and wharves that big projects stand on. Now
+          I’m learning to build the software behind them.
+        </p>
+        <div class="btns">
+          <a class="btn main" href="#work">See the site work</a
+          ><a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="tb">
+          <div><small>Role</small>Construction Project Manager</div>
+          <div><small>Languages</small>Chinese and English</div>
+          <div><small>Studying</small>Software and Fullstack Engineering</div>
+          <div><small>Current site</small>Ibeto Terminal Wharf</div>
+        </div>
+      </div>
+    </header>
 
-<section id="work"><h2>Site work</h2>
-<div class="gantt"><h3>Project timeline</h3><p>Dated projects. Assignments overlapped.</p>
-<div class="grow"><span>Sterling Global CPP</span><div class="track"><i style="left:0;width:51.85%"></i></div></div>
-<div class="grow"><span>Sterling Global power plant</span><div class="track"><i style="left:48.15%;width:44.44%"></i></div></div>
-<div class="grow"><span>Bayelsa State Stadium</span><div class="track"><i style="left:66.67%;width:33.33%"></i></div></div>
-<div class="axis" aria-hidden="true"><span style="left:0">Dec 2023</span><span style="left:22.2%">Jun 2024</span><span style="left:44.4%">Dec 2024</span><span style="left:66.7%">Jun 2025</span><span style="left:88.9%">Dec 2025</span></div></div>
+    <main class="wrap">
+      <section id="about">
+        <div class="about">
+          <h2>About</h2>
+          <div>
+            <p class="big">
+              I manage foundation, piling and marine works, from a 30,000-seat
+              stadium in Bayelsa State to a terminal wharf and refinery
+              foundations.
+            </p>
+            <div class="pts">
+              <div>
+                <h3>Delivery on site</h3>
+                <p>
+                  Planning, site coordination, team leadership, finance and
+                  procurement across large civil and industrial projects.
+                </p>
+              </div>
+              <div>
+                <h3>Two languages</h3>
+                <p>
+                  I work in Chinese and English on sites with Chinese
+                  contractors, so decisions and drawings reach the people who
+                  build.
+                </p>
+              </div>
+              <div>
+                <h3>Building software</h3>
+                <p>
+                  Studying software engineering to make the tools project teams
+                  use every day.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<article class="proj"><div class="ph"><div class="pair"><img src="assets/ibeto-wharf-piling.jpg" alt="Steel piles on the deck at Ibeto Terminal Wharf with a vibro hammer on the tallest pile"><img src="assets/chec-night-pour.jpg" alt="Night concrete pour with cranes and a tug boat at the China Harbour Engineering Company site"></div></div>
-<div class="tx"><h3>Ibeto Terminal Wharf<span class="now">Current</span></h3><p class="meta">Project Manager, China Harbour Engineering Company and China Hebei Engineering Geotechnical Group</p><p>Terminal wharf construction, including steel piling and night concrete pours at the water’s edge.</p></div></article>
+      <section id="work">
+        <h2>Site work</h2>
+        <div class="gantt">
+          <h3>Project timeline</h3>
+          <p>Dated projects. Assignments overlapped.</p>
+          <div class="grow">
+            <span>Sterling Global CPP</span>
+            <div class="track"><i style="left: 0; width: 51.85%"></i></div>
+          </div>
+          <div class="grow">
+            <span>Sterling Global power plant</span>
+            <div class="track"><i style="left: 48.15%; width: 44.44%"></i></div>
+          </div>
+          <div class="grow">
+            <span>Bayelsa State Stadium</span>
+            <div class="track"><i style="left: 66.67%; width: 33.33%"></i></div>
+          </div>
+          <div class="axis" aria-hidden="true">
+            <span style="left: 0">Dec 2023</span
+            ><span style="left: 22.2%">Jun 2024</span
+            ><span style="left: 44.4%">Dec 2024</span
+            ><span style="left: 66.7%">Jun 2025</span
+            ><span style="left: 88.9%">Dec 2025</span>
+          </div>
+        </div>
 
-<article class="proj rev"><div class="ph"><img src="assets/bayelsa-stadium.jpg" alt="Aerial view of the Bayelsa State Stadium foundation works with cranes and footings"></div>
-<div class="tx"><h3>Bayelsa State Stadium</h3><p class="meta">Project Manager, Jun 2025 to Feb 2026, Mutual Commitment Company</p><p>Foundation works for a modern 30,000-seat stadium.</p></div></article>
+        <article class="proj">
+          <div class="ph">
+            <div class="pair">
+              <img
+                src="assets/ibeto-wharf-piling.jpg"
+                alt="Steel piles on the deck at Ibeto Terminal Wharf with a vibro hammer on the tallest pile" /><img
+                src="assets/chec-night-pour.jpg"
+                alt="Night concrete pour with cranes and a tug boat at the China Harbour Engineering Company site" />
+            </div>
+          </div>
+          <div class="tx">
+            <h3>Ibeto Terminal Wharf<span class="now">Current</span></h3>
+            <p class="meta">
+              Project Manager, China Harbour Engineering Company and China Hebei
+              Engineering Geotechnical Group
+            </p>
+            <p>
+              Terminal wharf construction, including steel piling and night
+              concrete pours at the water’s edge.
+            </p>
+          </div>
+        </article>
 
-<article class="proj"><div class="ph"><img src="assets/sterling-power-plant.jpg" alt="Piling rig and reinforcement cage on the power plant site at Sterling Global"></div>
-<div class="tx"><h3>Sterling Global power plant</h3><p class="meta">Project Manager, Jan 2025 to Dec 2025</p><p>Power plant works on the Sterling Global project, including piling.</p></div></article>
+        <article class="proj rev">
+          <div class="ph">
+            <img
+              src="assets/bayelsa-stadium.jpg"
+              alt="Aerial view of the Bayelsa State Stadium foundation works with cranes and footings" />
+          </div>
+          <div class="tx">
+            <h3>Bayelsa State Stadium</h3>
+            <p class="meta">
+              Project Manager, Jun 2025 to Feb 2026, Mutual Commitment Company
+            </p>
+            <p>Foundation works for a modern 30,000-seat stadium.</p>
+          </div>
+        </article>
 
-<div class="more"><div><h3>Sterling Global CPP</h3><p class="meta">Project Manager, Dec 2023 to Jan 2025</p></div><div><h3>BUA tank, Ikot Abasi</h3><p class="meta">Project Manager</p></div><div><h3>New Dangote refinery</h3><p class="meta">Project Manager, pile foundation</p></div></div>
-</section>
+        <article class="proj">
+          <div class="ph">
+            <img
+              src="assets/sterling-power-plant.jpg"
+              alt="Piling rig and reinforcement cage on the power plant site at Sterling Global" />
+          </div>
+          <div class="tx">
+            <h3>Sterling Global power plant</h3>
+            <p class="meta">Project Manager, Jan 2025 to Dec 2025</p>
+            <p>
+              Power plant works on the Sterling Global project, including
+              piling.
+            </p>
+          </div>
+        </article>
 
-<section id="software"><div class="sw"><div><h2>Software</h2><p>First projects are in progress. I’m studying Software Engineering at Miva Open University and Fullstack Engineering at AltSchool Africa.</p><p>Finished builds, with live links and code, will be added here as they ship.</p></div>
-<pre class="code" aria-label="Summary as code"><i>// where I am right now</i>
+        <div class="more">
+          <div>
+            <h3>Sterling Global CPP</h3>
+            <p class="meta">Project Manager, Dec 2023 to Jan 2025</p>
+          </div>
+          <div>
+            <h3>BUA tank, Ikot Abasi</h3>
+            <p class="meta">Project Manager</p>
+          </div>
+          <div>
+            <h3>New Dangote refinery</h3>
+            <p class="meta">Project Manager, pile foundation</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="software">
+        <div class="sw">
+          <div>
+            <h2>Software</h2>
+            <p>
+              First projects are in progress. I’m studying Software Engineering
+              at Miva Open University and Fullstack Engineering at AltSchool
+              Africa.
+            </p>
+            <p>
+              Finished builds, with live links and code, will be added here as
+              they ship.
+            </p>
+          </div>
+          <pre
+            class="code"
+            aria-label="Summary as code"><i>// where I am right now</i>
 <b>const</b> arinze = {
   site:    <b>"project manager"</b>,
   languages: [<b>"Chinese"</b>, <b>"English"</b>],
   learning: [<b>"Software Engineering"</b>,
              <b>"Fullstack Engineering"</b>],
   next:    <b>"ship the first project"</b>,
-};</pre></div></section>
+};</pre>
+        </div>
+      </section>
 
-<section id="background"><h2>Background</h2><div class="cols">
-<div><h3>Education</h3><ul><li>Fullstack Engineering<small>AltSchool Africa, in progress</small></li><li>Software Engineering<small>Miva Open University, in progress</small></li><li>Engineering<small>Nnamdi Azikiwe University</small></li><li>Chinese<small>Confucius Institute</small></li></ul></div>
-<div><h3>Employers</h3><ul><li>China National Chemical Engineering Company<small>Chinese translator, Sterling Global project</small></li><li>China Hebei Engineering Company<small>Project Manager</small></li><li>China Harbour Engineering Company<small>Project Manager, Ibeto Terminal Wharf</small></li><li>Mutual Commitment Company<small>Project Manager, Bayelsa State Stadium</small></li></ul></div>
-<div><h3>Skills</h3><ul><li>Construction project management</li><li>Site coordination and team leadership</li><li>Finance and procurement management</li><li>Chinese–English translation</li><li>Software engineering, in training</li></ul></div></div></section>
-</main>
+      <section id="background">
+        <h2>Background</h2>
+        <div class="cols">
+          <div>
+            <h3>Education</h3>
+            <ul>
+              <li>
+                Fullstack Engineering<small
+                  >AltSchool Africa, in progress</small
+                >
+              </li>
+              <li>
+                Software Engineering<small
+                  >Miva Open University, in progress</small
+                >
+              </li>
+              <li>Engineering<small>Nnamdi Azikiwe University</small></li>
+              <li>Chinese<small>Confucius Institute</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Employers</h3>
+            <ul>
+              <li>
+                China National Chemical Engineering Company<small
+                  >Chinese translator, Sterling Global project</small
+                >
+              </li>
+              <li>
+                China Hebei Engineering Company<small>Project Manager</small>
+              </li>
+              <li>
+                China Harbour Engineering Company<small
+                  >Project Manager, Ibeto Terminal Wharf</small
+                >
+              </li>
+              <li>
+                Mutual Commitment Company<small
+                  >Project Manager, Bayelsa State Stadium</small
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>Construction project management</li>
+              <li>Site coordination and team leadership</li>
+              <li>Finance and procurement management</li>
+              <li>Chinese–English translation</li>
+              <li>Software engineering, in training</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<footer class="contact" id="contact"><div class="wrap"><h2>Let’s talk about your project</h2>
-<div class="rows"><a href="mailto:arinzeakuagbazie8@gmail.com">arinzeakuagbazie8@gmail.com<span>Email</span></a><a href="tel:+2349047244283">+234 904 724 4283<span>Call</span></a><a href="https://www.linkedin.com/in/arinze-miracle-51b981356/" target="_blank" rel="noopener">LinkedIn profile<span>Connect</span></a></div>
-<small>© Arinze Miracle Akuagbazie</small></div></footer>
-</body>
+    <footer class="contact" id="contact">
+      <div class="wrap">
+        <h2>Let’s talk about your project</h2>
+        <div class="rows">
+          <a href="mailto:arinzeakuagbazie8@gmail.com"
+            >arinzeakuagbazie8@gmail.com<span>Email</span></a
+          ><a href="tel:+2349047244283">+234 904 724 4283<span>Call</span></a
+          ><a
+            href="https://www.linkedin.com/in/arinze-miracle-51b981356/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn profile<span>Connect</span></a
+          >
+        </div>
+        <small>© Arinze Miracle Akuagbazie</small>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var n = document.getElementById("nav"),
+          b = n.querySelector(".burger");
+        function set(o) {
+          n.classList.toggle("open", o);
+          b.setAttribute("aria-expanded", o);
+          b.setAttribute("aria-label", o ? "Close menu" : "Open menu");
+        }
+        b.addEventListener("click", function () {
+          set(!n.classList.contains("open"));
+        });
+        n.querySelectorAll("#menu a").forEach(function (a) {
+          a.addEventListener("click", function () {
+            set(false);
+          });
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") set(false);
+        });
+        window
+          .matchMedia("(min-width:760px)")
+          .addEventListener("change", function () {
+            set(false);
+          });
+      })();
+    </script>
+  </body>
 </html>
